@@ -22,7 +22,7 @@ export const Login = ({navigation}) => {
                     value={email}
                     onChangeText={setEmail}
                     style={styles.input}
-                    placeholder='Eamil..'
+                    placeholder='Email..'
                     placeholderTextColor='#000'
                 />
                 <Text style={styles.formLabel}>password</Text>
@@ -38,6 +38,10 @@ export const Login = ({navigation}) => {
                     style={styles.buttonEntrar}>
                     <Text>Entrar</Text>
                 </TouchableOpacity>
+                <Text 
+                style={styles.formLabel}
+                onPress={()=>  navigation.navigate('Register')}
+                >Cadastrar-se</Text>
             </View>
         </View>
     )
